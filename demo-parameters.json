@@ -1,0 +1,42 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "demo-aks01"
+        },
+        "dnsPrefix": {
+            "value": "demo-aks"
+        },
+        "linuxAdminUsername": {
+            "value": "demo-admin"
+        },
+        "sshRSAPublicKey": {
+            "value": "GEN-SSH-PUB-KEY"
+        },
+        "servicePrincipalClientId": {
+            "value": "GEN-GUID"
+        },
+        "servicePrincipalClientSecret": {
+            "value": "GEN-UNIQUE"
+        },
+        "location": {
+            "value": "us-west-01"
+        },
+        "osDiskSizeGB": {
+            "value": 30
+        },
+        "agentCount": {
+            "value": 1
+        },
+        "agentVMSize": {
+            "value": "Standard_D2_v2"
+        },
+        "kubernetesVersion": {
+            "value": "1.11.2"
+        },
+        "enableRBAC": {
+            "value": true
+        }
+    }
+}
